@@ -1,24 +1,44 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!--Adicionar filme à lista-->
-        <div class="inserir_filme">
-            <label for="inputFilme">Adicionar filme:</label>
-            <input id="inputFilme" placeholder="Título">
-            <button type="submit" id="addFilme">+</button>
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--Icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Movie Randomizer</title>
+</head>
+<body>
+    <div class="header">
+        <div class="adicionar-filme">
+            <p>Adicionar filme:</p>
+            <input type="text" placeholder="Titulo">
+            <button type="submit">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <p class="error">Nome inválido!</p>
         </div>
-        <!--Escolher filme aleatório-->
-        <div>
-            <button id="escolherFilme">Escolher filme</button>
+        <div class="escolher-filme">
+            <button>Escolher filme</button>
         </div>
-        <!--Mostra filme escolhido-->
-        <div class="roleta">
-            <img id="poster">
-            <h3 id="titulo"></h3>
+    </div>
+    <div class="container-filme">
+        <img src="https://image.tmdb.org/t/p/w500/neZ0ykEsPqxamsX6o5QNUFILQrz.jpg">
+        <div class="info-filme">
+            <div class="titulo">
+                <h1 id="titulo-filme">Akira</h1>
+                <h2 id="ano">1988</h2>
+            </div>
+            <div class="generos">
+                <p>Animação</p>
+                <p>Ficção Científica</p>
+                <p>Aventura</p>
+            </div>
+            <p id="sinopse">
+                Uma grande explosão fez com que Tóquio fosse destruída em 1988. Em seu lugar, foi construída Neo-Tóquio, que, em 2019, sofre com atentados terroristas por toda a cidade. Kaneda e Tetsuo são amigos que integram uma gangue de motoqueiros. Eles disputam rachas violentos com uma gangue rival, os Palhaços, até que um dia, Tetsuo encontra Takashi, uma estranha criança com poderes que fugiu do hospital onde era mantido como cobaia. Tetsuo é ferido no encontro e, antes de receber a ajuda dos amigos, é levado por integrantes do exército, liderados pelo coronel Shikishima. A partir de então, Tetsuo passa a desenvolver poderes inimagináveis, o que faz com que seja comparado ao lendário Akira, responsável pela explosão de 1988. Paralelamente, Kaneda se interessa por Kei, uma garota envolvida com espiões, que tenta decifrar o enigma por trás das cobaias controladas pelo exército.
+            </p>
         </div>
-    </body>
-    <script src="script.js"></script>
+    </div>
+    <script src="env.js"></script>
+    <script src="main.js"></script>
+</body>
 </html>
