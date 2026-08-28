@@ -13,15 +13,30 @@ body {
     width: 100%;
     display: flex;
     margin: 20px;
+    margin-top: 30px;
     justify-content: space-between;
     align-items: center;
     position: relative;
+}
+
+.pagina-filmes {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.voltar {
+    cursor: pointer;
+    color: #FFF;
+    font-size: 24px;
 }
 
 .adicionar-filme {
     display: flex;
     align-items: center;
     gap: 8px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .adicionar-filme input {
@@ -46,7 +61,44 @@ body {
     display: none;
 }
 
+.lista-filmes {
+    padding: 40px;
+    min-height: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 50px;
+    align-items: baseline;
+}
+
+.elemento-filme {
+    display: flex;
+    min-height: 2.4rem;
+    width: fit-content;
+    max-width: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.elemento-filme img {
+    width: 140px;
+    height: 210px;
+}
+
+.elemento-filme h1 {
+    margin: 4px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.elemento-filme h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
 .escolher-filme {
+    margin-top: 50px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
