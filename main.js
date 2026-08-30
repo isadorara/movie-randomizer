@@ -11,6 +11,8 @@ const escolherFilme = document.querySelector(".escolher-filme");
 const poster = document.querySelector(".container-filme img");
 const container = document.querySelector('.lista-filmes')
 const posterLista = document.querySelector(".elemento-filme img");
+const deletarFilme = document.querySelector(".deletar");
+const editarLista = document.querySelector(".editar");
 
 //Generos
 const options = {
@@ -55,6 +57,9 @@ async function adicionarFilme(filme) {
 
         const template = `
             <div class="elemento-filme">
+                <button class="deletar">
+                    <i class="fa-solid fa-x"></i>
+                </button>
                 <img src="${posterLista}">
                 <h1 id="titulo-filme">${titulo}</h1>
                 <h2 id="ano">${ano}</h2>
@@ -83,4 +88,14 @@ printFilme.addEventListener("click", function() {
 //Escolher filme aleatório
 escolherFilme.addEventListener("click", function() {
     mostrarFilme(listaFilmes[Math.floor(Math.random() * listaFilmes.length)]);
+});
+
+//Editar lista de filmes
+editarLista.addEventListener("click", function() {
+    document.querySelector(".deletar").style.display = "flex";
+})
+
+//Deletar filme
+deletarFilme.addEventListener("click", function() {
+    console.log("Remover esse filme");
 });
