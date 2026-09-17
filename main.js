@@ -1,7 +1,7 @@
-const API_KEY = 'REMOVED'; //env.js
+const API_KEY = 'REMOVED';
 const URL = 'https://api.themoviedb.org/3/search/movie?language=pt&query=';
 const IMG_URL = 'https://image.tmdb.org/t/p/w500/';
-const GENRE_URL = `https://api.themoviedb.org/3/genre/movie/list?language=pt&api_key=${API_KEY}`;
+const GENRE_URL = `https://api.themoviedb.org/3/genre/movie/list?language=pt-BR&api_key=${API_KEY}`;
 
 let listaFilmes = [];
 
