@@ -4,6 +4,9 @@ Um projeto simples para ajudar a decidir qual filme assistir. Você adiciona os 
 
 Projeto criado como parte dos meus estudos no roadmap Full Stack.
 
+![lista_filmes](images\lista_filmes.png)
+![filme_aleatorio](images\filme_aleatorio.png)
+
 ## Funcionalidades
 
 - Buscar filmes pelo título usando a API do [TMDB](https://www.themoviedb.org/)
@@ -30,6 +33,7 @@ Projeto criado como parte dos meus estudos no roadmap Full Stack.
 ## Próximas features
 
 - [ ] Persistência da lista de filmes por meio de banco de dados
+- [ ] Opção de remover itens da lista de filmes
 - [ ] Separação em duas páginas (lista de filmes / roleta de sorteio)
 - [ ] Exibição dos gêneros de cada filme na lista
 - [ ] Filtro por gênero(s) na hora de sortear um filme
