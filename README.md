@@ -4,8 +4,8 @@ Um projeto simples para ajudar a decidir qual filme assistir. Você adiciona os 
 
 Projeto criado como parte dos meus estudos no roadmap Full Stack.
 
-![lista_filmes](images\lista_filmes.png)
-![filme_aleatorio](images\filme_aleatorio.png)
+![lista_filmes](images/lista_filmes.png)
+![filme_aleatorio](images/filme_aleatorio.png)
 
 ## Funcionalidades
 
